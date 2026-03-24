@@ -367,6 +367,11 @@ strong {
   gap: 20px;
   margin-top: 40px;
 }
+.button-group .btn:hover {
+  transform: none;
+  box-shadow: none;
+  cursor: auto;
+}
 
 .imersoes-section {
   margin-top: calc(var(--gap-size) * -1);
@@ -394,6 +399,10 @@ strong {
 .highlight-card-content .date {
   color: var(--color-primary);
   margin-top: 5px;
+}
+.highlight-card .btn {
+  padding: 25px 40px;
+  font-size: 18px;
 }
 
 /* Mentors Section */
