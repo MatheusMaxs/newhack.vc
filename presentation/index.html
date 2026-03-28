@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewHack — Apresentação</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Questrial&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+    <link rel="stylesheet" href="presentation.css">
+</head>
+<body>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+    </div>
+
+    <!-- Slide Counter -->
+    <div class="slide-counter" id="slideCounter">01 / 12</div>
+
+    <!-- Navigation Arrows -->
+    <button class="nav-arrow nav-prev" id="prevBtn" aria-label="Slide anterior">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+    </button>
+    <button class="nav-arrow nav-next" id="nextBtn" aria-label="Próximo slide">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+    </button>
+
+    <!-- ==================== SLIDES ==================== -->
+    <div class="slides-container" id="slidesContainer">
+
+        <!-- SLIDE 1: Cover -->
+        <section class="slide active" data-slide="1">
+            <div class="slide-bg-grid"></div>
+            <div class="slide-content slide-center">
+                <div class="cover-badge animate-in" data-delay="0">PITCH DECK 2026</div>
+                <img src="../assets/images/logo newhack.svg" alt="NewHack" class="cover-logo animate-in" data-delay="200">
+                <h1 class="cover-tagline animate-in" data-delay="400">Conectando a sua ideia ao<br><span class="text-gradient">Product Market Fit.</span></h1>
+                <p class="cover-sub animate-in" data-delay="600">Desde o início.</p>
+                <div class="cover-cta animate-in" data-delay="800">
+                    <span class="pulse-dot"></span>
+                    <span>Pressione <kbd>→</kbd> ou clique para avançar</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 2: Problem -->
+        <section class="slide" data-slide="2">
+            <div class="slide-bg-grid"></div>
+            <div class="slide-content slide-split">
+                <div class="split-left">
+                    <div class="slide-label animate-in" data-delay="0">O PROBLEMA</div>
+                    <h2 class="slide-title animate-in" data-delay="200">90% das startups <span class="text-gradient">fracassam</span> nos primeiros anos.</h2>
+                    <p class="slide-text animate-in" data-delay="400">Falta de orientação estratégica, acesso limitado a capital e desconexão com o mercado são os principais fatores.</p>
+                </div>
+                <div class="split-right">
+                    <div class="stat-grid">
+                        <div class="stat-card animate-in" data-delay="300">
+                            <div class="stat-number">90<span class="stat-unit">%</span></div>
+                            <div class="stat-label">Taxa de falha de startups</div>
+                        </div>
+                        <div class="stat-card animate-in" data-delay="500">
+                            <div class="stat-number">42<span class="stat-unit">%</span></div>
+                            <div class="stat-label">Sem product-market fit</div>
+                        </div>
+                        <div class="stat-card animate-in" data-delay="700">
+                            <div class="stat-number">29<span class="stat-unit">%</span></div>
+                            <div class="stat-label">Ficam sem capital</div>
+                        </div>
+                        <div class="stat-card animate-in" data-delay="900">
+                            <div class="stat-number">23<span class="stat-unit">%</span></div>
+                            <div class="stat-label">Equipe inadequada</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 3: Solution -->
+        <section class="slide" data-slide="3">
+            <div class="slide-bg-grid"></div>
+            <div class="slide-content slide-center">
+                <div class="slide-label animate-in" data-delay="0">A SOLUÇÃO</div>
+                <h2 class="slide-title-xl animate-in" data-delay="200">Um <span class="text-gradient">ecossistema completo</span><br>de apoio ao empreendedor.</h2>
+                <p class="slide-text-center animate-in" data-delay="400">Combinamos educação empreendedora, capital de risco e inovação aberta, criando oportunidades para empreendedores se conectarem com líderes, investidores e empresas de ponta.</p>
+                <div class="pillars-row animate-in" data-delay="600">
+                    <div class="pillar-chip">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                        Educação
+                    </div>
+                    <div class="pillar-chip">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                        Capital de Risco
+                    </div>
+                    <div class="pillar-chip">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        Inovação Aberta
+                    </div>
+                    <div class="pillar-chip">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        Comunidade
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 4: Education -->
+        <section class="slide" data-slide="4">
+            <div class="slide-bg-grid"></div>
+            <div class="slide-content slide-split">
+                <div class="split-left">
+                    <div class="slide-label animate-in" data-delay="0">PILAR 01</div>
+                    <h2 class="slide-title animate-in" data-delay="200"><span class="text-gradient">NewHack</span> Education</h2>
+                    <p class="slide-text animate-in" data-delay="400">A educação empreendedora e a aceleração de negócios são pilares fundamentais da NewHack.</p>
+                    <p class="slide-text animate-in" data-delay="500">Desenvolvemos habilidades, estratégias e a visão necessária para escalar seu negócio de forma sustentável.</p>
+                </div>
+                <div class="split-right">
+                    <div class="feature-list">
+                        <div class="feature-item animate-in" data-delay="400">
+                            <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+                            <div>
+                                <h4>NewHack Journey</h4>
+                                <p>Evento exclusivo que conecta empreendedores a líderes de mercado e investidores.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item animate-in" data-delay="600">
+                            <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+                            <div>
+                                <h4>Workshops Práticos</h4>
+                                <p>Conteúdo transformador com foco em aplicação imediata no seu negócio.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item animate-in" data-delay="800">
+                            <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+                            <div>
+                                <h4>Mentoria Direta</h4>
+                                <p>Acesso direto a mentores experientes do ecossistema de startups.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 5: Open Innovation -->
+        <section class="slide" data-slide="5">
+            <div class="slide-bg-grid"></div>
+            <div class="slide-content slide-center">
+                <div class="slide-label animate-in" data-delay="0">PILAR 02</div>
+                <h2 class="slide-title-xl animate-in" data-delay="200"><span class="text-gradient">Open</span> Innovation</h2>
+                <p class="slide-text-center animate-in" data-delay="400">A NewHack Innovation conecta startups e grandes corporações, oferecendo consultoria em inovação e promovendo conexões estratégicas que impulsionam o crescimento.</p>
+                <div class="innovation-cards animate-in" data-delay="600">
+                    <div class="innovation-card">
+                        <div class="innovation-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg></div>
+                        <h4>Consultoria em Inovação</h4>
+                        <p>Estratégias customizadas para transformação digital e inovação corporativa.</p>
+                    </div>
+                    <div class="innovation-card">
+                        <div class="innovation-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+                        <h4>Hackathons e Eventos</h4>
+                        <p>Competições que conectam talentos a desafios reais do mercado.</p>
+                    </div>
+                    <div class="innovation-card">
+                        <div class="innovation-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></div>
+                        <h4>Conexões Corporativas</h4>
+                        <p>Ponte entre startups inovadoras e grandes players da indústria.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 6: Community -->
+        <section class="slide" data-slide="6">
+            <div class="slide-bg-grid"></div>
+            <div class="slide-content slide-split">
+                <div class="split-left">
+                    <div class="slide-label animate-in" data-delay="0">PILAR 03</div>
+                    <h2 class="slide-title animate-in" data-delay="200">Comunidade <span class="text-gradient">NewHack</span></h2>
+                    <p class="slide-text animate-in" data-delay="400">Um grupo de pessoas apaixonadas por inovação, tecnologia e empreendedorismo.</p>
+                    <ul class="community-features animate-in" data-delay="500">
+                        <li>Discussões estratégicas sobre o mundo das startups</li>
+                        <li>Networking com profissionais da área</li>
+                        <li>Conteúdo exclusivo sobre inovação e tecnologia</li>
+                        <li>Acesso a oportunidades únicas de investimento</li>
+                    </ul>
+                </div>
+                <div class="split-right flex-center-col">
+                    <div class="community-visual animate-in" data-delay="400">
+                        <div class="orbit-system">
+                            <div class="orbit-center">
+                                <span>NH</span>
+                            </div>
+                            <div class="orbit orbit-1">
+                                <div class="orbit-dot" style="--angle: 0deg;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></div>
+                                <div class="orbit-dot" style="--angle: 120deg;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+                                <div class="orbit-dot" style="--angle: 240deg;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 6 3 6 3s6-1 6-3v-5"/></svg></div>
+                            </div>
+                            <div class="orbit orbit-2">
+                                <div class="orbit-dot" style="--angle: 60deg;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+                                <div class="orbit-dot" style="--angle: 180deg;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+                                <div class="orbit-dot" style="--angle: 300deg;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 7: Immersions -->
+        <section class="slide" data-slide="7">
+            <div class="slide-bg-grid"></div>
+            <div class="slide-content slide-center">
+                <div class="slide-label animate-in" data-delay="0">PILAR 04</div>
+                <h2 class="slide-title-xl animate-in" data-delay="200">Imersões <span class="text-gradient">Internacionais</span></h2>
+                <p class="slide-text-center animate-in" data-delay="400">Levamos empreendedores aos principais centros de inovação do mundo, como o Vale do Silício.</p>
+                <div class="immersion-highlight animate-in" data-delay="600">
+                    <div class="immersion-badge">PRÓXIMA IMERSÃO</div>
+                    <h3>4 dias de mentoria e imersão no <span class="text-gradient">Vale do Silício</span></h3>
+                    <p class="immersion-date">31 de Março — 03 de Abril, 2026</p>
+                    <div class="immersion-features">
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2px; margin-right: 4px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>San Francisco</span>
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2px; margin-right: 4px;"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><line x1="8" y1="6" x2="8" y2="6.01"/><line x1="12" y1="6" x2="12" y2="6.01"/><line x1="16" y1="6" x2="16" y2="6.01"/><line x1="8" y1="10" x2="8" y2="10.01"/><line x1="12" y1="10" x2="12" y2="10.01"/><line x1="16" y1="10" x2="16" y2="10.01"/><line x1="8" y1="14" x2="8" y2="14.01"/><line x1="12" y1="14" x2="12" y2="14.01"/><line x1="16" y1="14" x2="16" y2="14.01"/></svg>Visitas a Big Techs</span>
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2px; margin-right: 4px;"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Mentoria 1:1</span>
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2px; margin-right: 4px;"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>Networking Global</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 8: Founder - Rodrigo -->
+        <section class="slide" data-slide="8">
+            <div class="slide-bg-grid"></div>
+            <div class="slide-content slide-split">
+                <div class="split-left">
+                    <div class="slide-label animate-in" data-delay="0">FOUNDER</div>
+                    <h2 class="slide-title animate-in" data-delay="200"><span class="text-gradient">Rodrigo</span> Terron</h2>
+                    <p class="slide-text animate-in" data-delay="400">Empreendedor com <strong>mais de 10 anos de experiência</strong> no desenvolvimento e escala de startups no Brasil.</p>
+                    <div class="founder-highlights animate-in" data-delay="600">
+                        <div class="founder-tag">Forbes 30 Under 30</div>
+                        <div class="founder-tag">Ex-CEO Digital House</div>
+                        <div class="founder-tag">Fundador Shawee</div>
+                        <div class="founder-tag">Investidor Anjo</div>
+                    </div>
+                    <p class="slide-text animate-in" data-delay="700">Fundou a Shawee em 2017, que se uniu à Rocketseat em 2020. Após a aquisição pela Digital House em 2021, assumiu o cargo de CEO. Também atua como investidor-anjo e palestrante.</p>
+                </div>
+                <div class="split-right flex-center-col">
+                    <div class="founder-photo-frame animate-in" data-delay="400">
+                        <img src="../assets/images/rodrigo-terron.png" alt="Rodrigo Terron">
+                        <div class="photo-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 9: Founder - Paulo -->
+        <section class="slide" data-slide="9">
+            <div class="slide-bg-grid"></div>
+            <div class="slide-content slide-split">
+                <div class="split-left flex-center-col">
+                    <div class="founder-photo-frame animate-in" data-delay="400">
+                        <img src="../assets/images/paulo-braga.png" alt="Paulo Braga">
+                        <div class="photo-glow"></div>
+                    </div>
+                </div>
+                <div class="split-right">
+                    <div class="slide-label animate-in" data-delay="0">FOUNDER</div>
+                    <h2 class="slide-title animate-in" data-delay="200"><span class="text-gradient">Paulo</span> Braga</h2>
+                    <p class="slide-text animate-in" data-delay="400">Possui <strong>mais de 12 anos de experiência</strong> em venture capital, startups e inovação, com uma trajetória no empreendedorismo tech.</p>
+                    <div class="founder-highlights animate-in" data-delay="600">
+                        <div class="founder-tag">Founders Institute BR</div>
+                        <div class="founder-tag">Endeavor Scale-Up</div>
+                        <div class="founder-tag">Wayra Telefônica</div>
+                        <div class="founder-tag">CVC Grupo Boticário</div>
+                    </div>
+                    <p class="slide-text animate-in" data-delay="700">Criou o Neuron Ventures, primeiro fundo de venture capital focado em saúde no Brasil, dentro da Eurofarma. Dirigiu o CVC do Grupo Boticário.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 10: Traction / Numbers -->
+        <section class="slide" data-slide="10">
+            <div class="slide-bg-grid"></div>
+            <div class="slide-content slide-center">
+                <div class="slide-label animate-in" data-delay="0">TRAÇÃO</div>
+                <h2 class="slide-title-xl animate-in" data-delay="200">Nossos <span class="text-gradient">Números</span></h2>
+                <div class="metrics-grid animate-in" data-delay="400">
+                    <div class="metric-card">
+                        <div class="metric-value" data-count="6">0</div>
+                        <div class="metric-label">Edições do Journey</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value" data-count="500">0</div>
+                        <div class="metric-suffix">+</div>
+                        <div class="metric-label">Empreendedores impactados</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value" data-count="50">0</div>
+                        <div class="metric-suffix">+</div>
+                        <div class="metric-label">Startups aceleradas</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value" data-count="30">0</div>
+                        <div class="metric-suffix">+</div>
+                        <div class="metric-label">Mentores no ecossistema</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 11: Journey -->
+        <section class="slide" data-slide="11">
+            <div class="slide-bg-grid"></div>
+            <div class="slide-content slide-center">
+                <div class="slide-label animate-in" data-delay="0">METODOLOGIA</div>
+                <h2 class="slide-title-xl animate-in" data-delay="200">A <span class="text-gradient">Jornada</span> NewHack</h2>
+                <div class="journey-timeline animate-in" data-delay="400">
+                    <div class="journey-step">
+                        <div class="step-number">01</div>
+                        <div class="step-content">
+                            <h4>Ideação</h4>
+                            <p>Validação do problema e construção da proposta de valor.</p>
+                        </div>
+                    </div>
+                    <div class="journey-connector"></div>
+                    <div class="journey-step">
+                        <div class="step-number">02</div>
+                        <div class="step-content">
+                            <h4>Aceleração</h4>
+                            <p>Mentoria intensiva, desenvolvimento de MVP e estratégia de go-to-market.</p>
+                        </div>
+                    </div>
+                    <div class="journey-connector"></div>
+                    <div class="journey-step">
+                        <div class="step-number">03</div>
+                        <div class="step-content">
+                            <h4>Escala</h4>
+                            <p>Conexão com investidores, otimização de métricas e crescimento sustentável.</p>
+                        </div>
+                    </div>
+                    <div class="journey-connector"></div>
+                    <div class="journey-step">
+                        <div class="step-number">04</div>
+                        <div class="step-content">
+                            <h4>Expansão</h4>
+                            <p>Imersões internacionais, parcerias corporativas e novos mercados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 12: CTA / Close -->
+        <section class="slide" data-slide="12">
+            <div class="slide-bg-grid"></div>
+            <div class="slide-content slide-center">
+                <img src="../assets/images/logo newhack.svg" alt="NewHack" class="cta-logo animate-in" data-delay="0">
+                <h2 class="cta-title animate-in" data-delay="200">Pronto para transformar<br>sua startup em <span class="text-gradient">realidade</span>?</h2>
+                <p class="slide-text-center animate-in" data-delay="400">Junte-se ao ecossistema que está redefinindo o empreendedorismo no Brasil.</p>
+                <div class="cta-buttons animate-in" data-delay="600">
+                    <a href="mailto:contato@newhack.vc" class="cta-btn cta-btn-primary">contato@newhack.vc ↗</a>
+                    <a href="https://newhack.vc" target="_blank" class="cta-btn cta-btn-outline">newhack.vc ↗</a>
+                </div>
+                <div class="cta-social animate-in" data-delay="800">
+                    <span>@newhack.vc</span>
+                    <span>•</span>
+                    <span>LinkedIn</span>
+                    <span>•</span>
+                    <span>YouTube</span>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="presentation.js"></script>
+</body>
+</html>
